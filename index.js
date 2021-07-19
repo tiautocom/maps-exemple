@@ -14,7 +14,7 @@ function initMap() {
       componentRestrictions: { country: "br" },
       fields: ["formatted_address", "geometry", "name"],
       strictBounds: false,
-      types: ["establishment"],
+      types: ["address"],
     };
     map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
     const autocomplete = new google.maps.places.Autocomplete(input, options);
@@ -65,10 +65,10 @@ function initMap() {
         input.value = "";
       });
     }
-    setupClickListener("changetype-all", []);
-    setupClickListener("changetype-address", ["address"]);
-    setupClickListener("changetype-establishment", ["establishment"]);
-    setupClickListener("changetype-geocode", ["geocode"]);
+    // setupClickListener("changetype-all", []);
+    // setupClickListener("changetype-address", ["address"]);
+    // setupClickListener("changetype-establishment", ["establishment"]);
+    // setupClickListener("changetype-geocode", ["geocode"]);
     biasInputElement.addEventListener("change", () => {
       if (biasInputElement.checked) {
         autocomplete.bindTo("bounds", map);

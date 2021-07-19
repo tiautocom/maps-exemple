@@ -11,7 +11,7 @@ function initMap() {
     const biasInputElement = document.getElementById("use-location-bias");
     const strictBoundsInputElement = document.getElementById("use-strict-bounds");
     const options = {
-      componentRestrictions: { country: "us" },
+      componentRestrictions: { country: "br" },
       fields: ["formatted_address", "geometry", "name"],
       strictBounds: false,
       types: ["establishment"],

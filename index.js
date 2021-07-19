@@ -3,7 +3,7 @@
 // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: 40.749933, lng: -73.98633 },
+      center: { lat: -21.7946, lng: -48.1766 },
       zoom: 13,
     });
     const card = document.getElementById("pac-card");
